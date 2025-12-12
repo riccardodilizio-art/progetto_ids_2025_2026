@@ -1,14 +1,13 @@
 package org.example.hackathon;
 
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class GestoreHackathon {
-    private  Hackathon.HackathonBuilder hackathonBuilder;
+    private final Hackathon.HackathonBuilder hackathonBuilder;
 
     public GestoreHackathon(){
         this.hackathonBuilder = Hackathon.builder();

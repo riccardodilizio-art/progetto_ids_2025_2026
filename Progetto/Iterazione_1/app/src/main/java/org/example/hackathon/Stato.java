@@ -10,8 +10,7 @@ public enum Stato {
         return switch (this) {
             case inPreparazione -> inIscrizione;
             case inIscrizione -> inCorso;
-            case inCorso -> concluso;
-            case concluso -> concluso;
+            case inCorso, concluso -> concluso;
         };
     }
 }
