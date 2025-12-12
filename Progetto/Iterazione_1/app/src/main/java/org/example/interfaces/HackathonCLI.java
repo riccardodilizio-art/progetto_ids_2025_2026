@@ -38,7 +38,7 @@ public class HackathonCLI {
         }
 
         int x = scanner.nextInt();
-        scanner.close();
+        //scanner.close();
         return x;
     }
 }

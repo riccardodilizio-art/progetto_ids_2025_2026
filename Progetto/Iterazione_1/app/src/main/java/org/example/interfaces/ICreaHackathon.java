@@ -1,12 +1,16 @@
 package org.example.interfaces;
 
 import org.example.hackathon.GestoreHackathon;
+import org.example.hackathon.Hackathon;
 
 public class ICreaHackathon {
     GestoreHackathon gestoreHackathon = new GestoreHackathon();
 
-    public void creaHackathon() {
-        gestoreHackathon.creazioneHackathon();
+    public Hackathon creaHackathon() {
+        gestoreHackathon.inserisciInformazioni();
+        gestoreHackathon.inserisciGiudice();
+        gestoreHackathon.inserisciMentore();
+        return gestoreHackathon.creazioneHackathon();
     }
 
     private void mostraFormDati() {

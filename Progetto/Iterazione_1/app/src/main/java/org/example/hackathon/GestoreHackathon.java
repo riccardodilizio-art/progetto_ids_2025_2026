@@ -8,10 +8,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class GestoreHackathon {
-    private Hackathon.HackathonBuilder hackathonBuilder;
+    private  Hackathon.HackathonBuilder hackathonBuilder;
 
     public GestoreHackathon(){
-        this.hackathonBuilder = new Hackathon.HackathonBuilder();
+        this.hackathonBuilder = Hackathon.builder();
     }
 
     public void inserisciInformazioni() {
@@ -30,6 +30,11 @@ public class GestoreHackathon {
         team.add("Alberto");
         team.add("Giulio");
 
+        Set<String> sottomissioni = new HashSet<>();
+        sottomissioni.add("step1");
+        sottomissioni.add("step2");
+        sottomissioni.add("step3");
+
         hackathonBuilder
                 .nome("hackathon macerata")
                 .regolamento("aperte le iscrizioni")
@@ -43,6 +48,8 @@ public class GestoreHackathon {
                 .numeroMinimoPersone(2)
                 .numeroMassimoPersone(5)
                 .organizzatore(org)
+                .sottomissioni(sottomissioni)
+                .argomento("AI")
                 .stato(Stato.inPreparazione)
                 .teams(team);
     }
@@ -60,8 +67,8 @@ public class GestoreHackathon {
         hackathonBuilder.mentori(mentori);
     }
 
-	public void creazioneHackathon() {
-        hackathonBuilder.build();
+	public Hackathon creazioneHackathon() {
+        return hackathonBuilder.build();
 	}
 
 }

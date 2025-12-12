@@ -3,6 +3,7 @@ package org.example.hackathon;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -34,4 +35,27 @@ public class Hackathon {
 	private int numeroMinimoPersone;
 	private int numeroMassimoPersone;
 
+    @Override
+    public String toString() {
+        return "Hackathon{" +
+                ", nome='" + nome + '\n'+
+                ", regolamento='" + regolamento + '\n' +
+                ", scadenzaIscrizioni=" + scadenzaIscrizioni + "\n" +
+                ", dataInizio=" + dataInizio + "\n" +
+                ", dataFine=" + dataFine + "\n" +
+                ", luogo='" + luogo + '\n' +
+                ", premio=" + premio + "\n" +
+                ", dimensioneMassimaTeam=" + dimensioneMassimaTeam + "\n"+
+                ", dimensioneMinimaTeam=" + dimensioneMinimaTeam + "\n"+
+                ", giudice=" + giudice + "\n"+
+                ", mentori=" + mentori + "\n"+
+                ", stato=" + stato + "\n"+
+                ", organizzatore=" + organizzatore + "\n"+
+                ", teams=" + teams + "\n"+
+                ", argomento='" + argomento + '\n' +
+                ", sottomissioni=" + sottomissioni + "\n"+
+                ", numeroMinimoPersone=" + numeroMinimoPersone + "\n"+
+                ", numeroMassimoPersone=" + numeroMassimoPersone + "\n"+
+                '}';
+    }
 }

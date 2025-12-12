@@ -1,6 +1,7 @@
 
 package org.example;
 
+import org.example.hackathon.Hackathon;
 import org.example.interfaces.HackathonCLI;
 import org.example.interfaces.ICreaHackathon;
 
@@ -11,14 +12,12 @@ public class App {
         ICreaHackathon iCrea = new ICreaHackathon();
         int scelta = cli.menu();
         while(scelta != 0){
-            switch (scelta){
-                case 1: iCrea.creaHackathon();
-                    break;
+            if (scelta == 1) {
+                Hackathon hackathon = iCrea.creaHackathon();
+                System.out.println(hackathon);
             }
-
             scelta = cli.menu();
         }
-
-
+        System.out.println("Fine programma! Ciao");
     }
 }
