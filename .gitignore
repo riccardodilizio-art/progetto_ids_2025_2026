@@ -1,0 +1,18 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+out/
+
+### Java ###
+*.class
+*.log
+*.ctxt
+
+### File di Sistema  ###
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
