@@ -8,7 +8,10 @@ import lombok.Setter;
 public class Giudice {
 
 	private int id;
-	private int Nome;
+	private String Nome;
 
-
+    public Giudice(int id, String Nome) {
+        this.id = id;
+        this.Nome = Nome;
+    }
 }
