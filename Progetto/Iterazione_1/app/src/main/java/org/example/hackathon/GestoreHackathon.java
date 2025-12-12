@@ -3,8 +3,7 @@ package org.example.hackathon;
 public class GestoreHackathon {
 
 	public void creazioneHackathon() {
-		// TODO - implement GestoreHackathon.creazioneHackathon
-		throw new UnsupportedOperationException();
+		System.out.println("SI");
 	}
 
 	public void inserisciInformazioni() {
