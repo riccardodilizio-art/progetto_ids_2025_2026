@@ -1,3 +1,5 @@
+package org.example.hackathon;
+
 public class GestoreHackathon {
 
 	public void creazioneHackathon() {
