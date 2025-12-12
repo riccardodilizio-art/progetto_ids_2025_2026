@@ -1,35 +1,47 @@
 package org.example.interfaces;
 
+import org.example.hackathon.GestoreHackathon;
+
 public class ICreaHackathon {
-    public void creaHackathon(){
-        throw new UnsupportedOperationException();
+    GestoreHackathon gestoreHackathon = new GestoreHackathon();
+
+    public void creaHackathon() {
+        gestoreHackathon.creazioneHackathon();
     }
-    public void mostraFormDati(){
-        throw new UnsupportedOperationException();
-    }
-    public void inserisciDati(){
-        throw new UnsupportedOperationException();
-    }
-    public void notificaErrore(){
-        throw new UnsupportedOperationException();
-    }
-    public void mostraFormGiudice(){
-        throw new UnsupportedOperationException();
-    }
-    public void selezionaGiudice(){
+
+    private void mostraFormDati() {
         throw new UnsupportedOperationException();
     }
 
-    public void mostraFormMentori(){
+    private void inserisciDati() {
         throw new UnsupportedOperationException();
     }
-    public void selezionaMentori(){
+
+    private void notificaErrore() {
         throw new UnsupportedOperationException();
     }
-    public void aggiungiMentore(){
+
+    private void mostraFormGiudice() {
         throw new UnsupportedOperationException();
     }
-    public void notificaCreazioneHackathon(){
+
+    private void selezionaGiudice() {
+        throw new UnsupportedOperationException();
+    }
+
+    private void mostraFormMentori() {
+        throw new UnsupportedOperationException();
+    }
+
+    private void selezionaMentori() {
+        throw new UnsupportedOperationException();
+    }
+
+    private void aggiungiMentore() {
+        throw new UnsupportedOperationException();
+    }
+
+    private void notificaCreazioneHackathon() {
         throw new UnsupportedOperationException();
     }
 }
