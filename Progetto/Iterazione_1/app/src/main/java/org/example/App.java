@@ -20,7 +20,6 @@ public class App {
             scelta = HackathonCLI.menu();
         }
 
-        System.out.println("\n" + HackathonCLI.ANSI_GREEN + "Fine programma! Ciao" + HackathonCLI.ANSI_RESET);
         HackathonCLI.scanner.close();
     }
 }

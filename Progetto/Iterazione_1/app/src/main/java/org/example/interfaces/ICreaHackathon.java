@@ -144,22 +144,7 @@ public class ICreaHackathon {
                 "3713405167"
         );
 
-        gestoreHackathon.inserisciInformazioni(
-                nome,
-                regolamento,
-                scadenzaIscrizioni,
-                dataInizio,
-                dataFine,
-                luogo,
-                premio,
-                argomento,
-                minTeam,
-                maxTeam,
-                sottomissioni,
-                organizzatore,
-                maxPer,
-                minPer
-        );
+
 
         /* =========================
            2. Selezione giudice (CLI)
@@ -169,7 +154,6 @@ public class ICreaHackathon {
         Giudice giudiceSelezionato =
                 GestoreGiudici.getAllGiudici().toArray(new Giudice[0])[sceltaGiudice - 1];
 
-        gestoreHackathon.inserisciGiudice(giudiceSelezionato);
 
         /* =========================
            3. Selezione mentori (CLI)
@@ -185,13 +169,29 @@ public class ICreaHackathon {
             mentoriSelezionati.add(mentoriDisponibili[i - 1]);
         }
 
-        gestoreHackathon.inserisciMentore(mentoriSelezionati);
 
         /* =========================
-           4. Creazione finale
+           4. Creazione Hackathon
            ========================= */
 
-        hackathonCorrente = gestoreHackathon.creazioneHackathon();
+        hackathonCorrente = gestoreHackathon.creazioneHackathon(
+                nome,
+                regolamento,
+                scadenzaIscrizioni,
+                dataInizio,
+                dataFine,
+                luogo,
+                premio,
+                argomento,
+                minTeam,
+                maxTeam,
+                sottomissioni,
+                organizzatore,
+                maxPer,
+                minPer,
+                giudiceSelezionato,
+                mentoriSelezionati
+                );
 
         System.out.println("\nHackathon creato con successo:\n");
         System.out.println(hackathonCorrente);

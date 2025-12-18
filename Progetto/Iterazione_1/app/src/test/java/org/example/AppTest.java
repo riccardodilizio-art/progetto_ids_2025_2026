@@ -3,12 +3,13 @@
  */
 package org.example;
 
+import org.example.hackathon.Hackathon;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void appCreateHacakthon() {
+        Hackathon app = new Hackathon();
+
     }
 }
