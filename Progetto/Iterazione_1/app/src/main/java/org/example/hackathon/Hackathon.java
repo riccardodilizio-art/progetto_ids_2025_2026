@@ -1,17 +1,9 @@
 package org.example.hackathon;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
 import java.time.LocalDateTime;
 import java.util.Set;
 
-@Getter
-@Setter
-@Builder
-@ToString
+
 public class Hackathon {
 
 	private int id;
@@ -57,5 +49,159 @@ public class Hackathon {
                 ", numeroMinimoPersone=" + numeroMinimoPersone + "\n"+
                 ", numeroMassimoPersone=" + numeroMassimoPersone + "\n"+
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getRegolamento() {
+        return regolamento;
+    }
+    public void setRegolamento(String regolamento) {
+        this.regolamento = regolamento;
+    }
+    public LocalDateTime getScadenzaIscrizioni() {
+        return scadenzaIscrizioni;
+    }
+
+    public void setScadenzaIscrizioni(LocalDateTime scadenzaIscrizioni) {
+        this.scadenzaIscrizioni = scadenzaIscrizioni;
+    }
+
+    public double getPremio() {
+        return premio;
+    }
+
+    public void setPremio(double premio) {
+        this.premio = premio;
+    }
+
+    public void setDataInizio(LocalDateTime dataInizio) {
+        this.dataInizio = dataInizio;
+    }
+
+    public LocalDateTime getDataFine() {
+        return dataFine;
+    }
+
+    public LocalDateTime getDataInizio() {
+        return dataInizio;
+    }
+
+    public void setDataFine(LocalDateTime dataFine) {
+        this.dataFine = dataFine;
+    }
+
+    public void setLuogo(String luogo) {
+        this.luogo = luogo;
+    }
+
+    public String getLuogo() {
+        return luogo;
+    }
+
+    public void setDimensioneMassimaTeam(int dimensioneMassimaTeam) {
+        this.dimensioneMassimaTeam = dimensioneMassimaTeam;
+    }
+
+    public int getDimensioneMassimaTeam() {
+        return dimensioneMassimaTeam;
+    }
+
+    public int getDimensioneMinimaTeam() {
+        return dimensioneMinimaTeam;
+    }
+
+    public void setDimensioneMinimaTeam(int dimensioneMinimaTeam) {
+        this.dimensioneMinimaTeam = dimensioneMinimaTeam;
+    }
+
+    public void setGiudice(Giudice giudice) {
+        this.giudice = giudice;
+    }
+
+    public Giudice getGiudice() {
+        return giudice;
+    }
+
+    public void setMentori(Set<Mentore> mentori) {
+        this.mentori = mentori;
+    }
+
+    public Set<Mentore> getMentori() {
+        return mentori;
+    }
+
+    public String getVincitore() {
+        return vincitore;
+    }
+
+    public void setVincitore(String vincitore) {
+        this.vincitore = vincitore;
+    }
+
+    public void setStato(Stato stato) {
+        this.stato = stato;
+    }
+
+    public Stato getStato() {
+        return stato;
+    }
+
+    public void setOrganizzatore(Organizzatore organizzatore) {
+        this.organizzatore = organizzatore;
+    }
+
+    public Organizzatore getOrganizzatore() {
+        return organizzatore;
+    }
+
+    public void setTeams(Set<String> teams) {
+        this.teams = teams;
+    }
+
+    public Set<String> getTeams() {
+        return teams;
+    }
+
+    public void setArgomento(String argomento) {
+        this.argomento = argomento;
+    }
+
+    public String getArgomento() {
+        return argomento;
+    }
+
+    public void setSottomissioni(Set<String> sottomissioni) {
+        this.sottomissioni = sottomissioni;
+    }
+
+    public Set<String> getSottomissioni() {
+        return sottomissioni;
+    }
+
+    public void setNumeroMinimoPersone(int numeroMinimoPersone) {
+        this.numeroMinimoPersone = numeroMinimoPersone;
+    }
+
+    public int getNumeroMinimoPersone() {
+        return numeroMinimoPersone;
+    }
+
+    public void setNumeroMassimoPersone(int numeroMassimoPersone) {
+        this.numeroMassimoPersone = numeroMassimoPersone;
+    }
+
+    public int getNumeroMassimoPersone() {
+        return numeroMassimoPersone;
     }
 }

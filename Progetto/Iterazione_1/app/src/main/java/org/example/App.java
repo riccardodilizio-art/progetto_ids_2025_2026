@@ -8,6 +8,9 @@ public class App {
         ICreaHackathon iCrea = new ICreaHackathon();
         int scelta = HackathonCLI.menu();
 
+        HackathonCLI.scanner.nextLine();
+
+
         while (scelta != 0) {
             if (scelta == 1) {
                 iCrea.creaHackathon();
